@@ -95,18 +95,17 @@ body {
   position: absolute;
   left: 0;
   border-radius: 4px;
-  bottom: -2px; /* Отступ подчеркивания от текста */
-  height: 2px; /* Толщина подчеркивания */
-  width: 100%; /* Полная ширина элемента */
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
   background-color: var(--Pressed_state);
-  transform: scaleX(0); /* Скрытое начальное состояние */
-  transform-origin: left; /* Начинает анимацию слева */
-  transition: transform 0.3s ease; /* Плавный переход */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 
-/* При нажатии подчеркивание становится видимым */
 .nav__link:active::after {
-  transform: scaleX(1); /* Растягивает подчеркивание до полной ширины */
+  transform: scaleX(1);
 }
 
 .header__contact a {
