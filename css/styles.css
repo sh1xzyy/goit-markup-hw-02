@@ -1,5 +1,10 @@
-button {
+button:hover {
 	cursor: pointer;
+	background-color: #404bbf;
+}
+
+a:hover {
+	color: #404bbf;
 }
 
 body {
